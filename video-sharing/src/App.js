@@ -1,13 +1,13 @@
 import React from "react";
-import UploadFile from "./components/Upload-Search-Stream/Upload.jsx";
-import Streaming from "./components/Upload-Search-Stream/Streaming.jsx"
+
+import Router from "./routers/routes";
 
 function App() {
   return <>
-  <UploadFile/>
-  <Streaming/>
-  
-  </>
-}
-
+    <Router/>
+    
+    
+    
+    </>
+  }
 export default App;
