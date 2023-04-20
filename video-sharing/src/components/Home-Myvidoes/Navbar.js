@@ -3,7 +3,6 @@ import "./Navbar.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"
 import axios from "axios";
-import {AiOutlineSearch} from "react-icons"
 function Navbar(){
     const navigate = useNavigate();
     const [q, setQ] = useState("");
