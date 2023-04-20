@@ -43,6 +43,7 @@ const fileUpload = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 

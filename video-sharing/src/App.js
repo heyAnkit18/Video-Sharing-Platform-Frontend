@@ -1,11 +1,10 @@
 import React from "react";
-import LandingPage from "./components/Home-Myvidoes/Landing";
 import Router from "./routers/routes";
-import UploadFile from "./components/Upload-Search-Stream/Upload.jsx";
+import Upload from "./components/Upload-Search-Stream/Upload";
 function App() {
   return <>
     <Router/>
-    <UploadFile/>
+    <Upload/>
     </>
   }
 export default App;

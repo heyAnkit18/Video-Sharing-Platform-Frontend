@@ -8,19 +8,35 @@ function Navbar(){
     const navigate = useNavigate();
     const [q, setQ] = useState("");
     const [toggle, setToggle] = useState(true);
-    const token = "pending"
+    // const token = localStorage.getItem("myToken");
 
-    useEffect(() => {
-        if(token){
-            setToggle(true)
-        }
-        else{
-            setToggle(false)
-        }
-    },[token])
+    // useEffect(() => {
+    //     if(token){
+    //         setToggle(true)
+    //     }
+    //     else{
+    //         setToggle(false)
+    //     }
+    // },[token])
+
+    const signOut = async ()=>{
+        const newToken = localStorage.getItem("myToken");
+        axios.post("",{newToken})
+        .then((res) => {
+            if(res.status == 200){
+                window.alert("Logout Successfully");
+                localStorage.clear()
+                setToggle(false);
+                navigate("/")
+            }
+        })
+        .catch((error) => {
+            window.alert("Logout unsuccessful");
+        })
+    }
 
     return <>
-    {toggle?
+    {!toggle?
     <nav>
         <div className="Container">
                 <h1 className="heading" onClick={() => {navigate("/")}}>Tuner</h1>
@@ -46,9 +62,9 @@ function Navbar(){
                 </div>
                 <div className="btn-3" onClick={() => {navigate("/myvidoes")}}>My Vidoes</div>
                 <div className="com-btn">|</div>
-                <div className="btn-4" onClick={() => {}}>Upload</div>
+                <div className="btn-4" >Upload</div>
                 <div className="com-btn">|</div>
-                <div className="btn-5" onClick={() => {}}>Signout</div>
+                <div className="btn-5" >Signout</div>
         </div>
     </nav> 
     }
