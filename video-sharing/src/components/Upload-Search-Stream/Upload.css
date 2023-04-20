@@ -1,0 +1,104 @@
+#container{
+    width: 550px;
+    height:520px;
+    top: 0;
+    left: 0;
+    display: flex;
+    margin:8% 30%;
+    color: rgb(243, 245, 247);
+    background-color:rgb(3, 2, 2);
+    flex-direction: column;
+    border-radius: 3%;
+    z-index: 1;
+    position: absolute;
+}
+h2{
+    margin-left: 3%;
+}
+#input-video{
+    border: 1px solid gray;
+    color: rgb(96, 237, 53);
+    background-color: transparent;
+    border-radius: 3px;
+    padding: 22px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+h1{
+    margin-left: 2.4%;
+}
+#title{
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color:black;
+    color: white;
+}
+#Describtion{
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color:black;
+    color: white;
+    margin-top: 5%;
+}
+
+.main-div{
+    margin-top: 30px;
+    display: flex;
+    position: absolute;
+    margin-bottom: 20px;
+}
+
+.div-container {
+    margin-left: 50px;
+    border: 0;
+}
+
+#first-div {
+    margin-left: 3%;
+}
+
+.main-div label {
+    color: gray;
+    font-size: 14px;
+}
+
+.main-div select {
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    border: 0;
+}
+
+
+#img-input{
+    height: 6rem;
+    width: 16rem;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: 3%;
+    margin-right: 3%;
+    border: 1px solid rgb(243, 243, 51);
+    color: antiquewhite;
+    background-color: transparent;
+}
+#button-save {
+    height: 3.2rem;
+    width: 9rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: large;
+    background-color: rgb(17, 205, 7);
+    color: white;
+    border-radius: 25px;
+    border: 0;
+}
+.Visibility{
+    margin: 20%;
+}
+.category{
+    margin: 20%;
+
+}
