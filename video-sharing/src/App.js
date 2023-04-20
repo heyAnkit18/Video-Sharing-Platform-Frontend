@@ -1,15 +1,10 @@
 import React from "react";
-import Upload from "./components/upload-search-stream/Upload.jsx";
-
 import Router from "./routers/routes";
-
+import UploadFile from "./components/Upload-Search-Stream/Upload.jsx";
 function App() {
   return <>
     <Router/>
-    <Upload/>
-    
-    
-    
+    <UploadFile/>
     </>
   }
 export default App;
