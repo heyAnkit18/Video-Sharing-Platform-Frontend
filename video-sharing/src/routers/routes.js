@@ -9,7 +9,7 @@ function Router(){
     return <>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<LandingPage/>} />
+                <Route path="/" element={<LandingPage/>}/>
                 {/* <Route path="/upload" element={<Upload/>}/>
                 <Route path="/streaming" element={<Streaming/>}/> */}
                 
