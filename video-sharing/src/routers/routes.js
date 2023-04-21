@@ -1,10 +1,11 @@
 import React from "react";
 import LandingPage from "../components/Home-Myvidoes/Landing";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import Upload from "../components/Upload-Search-Stream/Upload";
 // import Streaming from "../components/Upload-Search-Stream/Streaming";
 
 
-import { BrowserRouter,Routes, Route } from "react-router-dom";
+
 function Router(){
     return <>
         <BrowserRouter>
