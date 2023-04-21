@@ -3,7 +3,6 @@ import "./Upload.css";
 const fileUpload = () => {
 
 
-
   
   return (
     <div id="container">
