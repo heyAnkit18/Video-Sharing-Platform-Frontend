@@ -10,19 +10,16 @@ function Signin(){
     const navigate = useNavigate("")
     const Submithandler =(e) =>{
         e.preventDefault()
-        
-        const res = axios.post("http://localhost:8080/Signin",{
-            email: email,
-            password:email
-        })
+        const login ={email,password}
+        const res = axios.post("http://localhost:8080/Signin",login)
         .then(()=>{
             console.log(res.data)
-            window.alert(" Sign sucessfully sucess")
+            window.alert(" Signin sucessfully ")
             navigate("/")
            })
            .catch(()=>{
             console.log(e)
-            window.alert("Please  Register  ")
+            // window.alert("Please  Register  ")
     
            })
 
