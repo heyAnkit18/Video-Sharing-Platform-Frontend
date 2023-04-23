@@ -10,7 +10,7 @@ const Search = ()=>{
 
     return <>
         <Navbar />
-        <div style={{display:"flex",flexWrap:"wrap",gap:"15px",justifyContent:"space-around",marginTop:"20px"}}>
+        <div style={{display:"flex",flexWrap:"wrap",gap:"16px",justifyContent:"space-around",marginTop:"22px"}}>
             {videos.map((data)=>{
                 return <Card data={data}/>
             })}

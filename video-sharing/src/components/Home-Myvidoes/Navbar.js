@@ -7,7 +7,7 @@ function Navbar(){
     const navigate = useNavigate();
     const [q, setQ] = useState("");
     const [toggle, setToggle] = useState(true);
-    // const token = localStorage.getItem("myToken");
+    const token = localStorage.getItem("myToken");
 
     // useEffect(() => {
     //     if(token){
@@ -18,21 +18,21 @@ function Navbar(){
     //     }
     // },[token])
 
-    const signOut = async ()=>{
-        const newToken = localStorage.getItem("myToken");
-        axios.post("",{newToken})
-        .then((res) => {
-            if(res.status == 200){
-                window.alert("Logout Successfully");
-                localStorage.clear()
-                setToggle(false);
-                navigate("/")
-            }
-        })
-        .catch((error) => {
-            window.alert("Logout unsuccessful");
-        })
-    }
+    // const signOut = async ()=>{
+    //     const newToken = localStorage.getItem("myToken");
+    //     axios.post("",{newToken})
+    //     .then((res) => {
+    //         if(res.status == 200){
+    //             window.alert("Logout Successfully");
+    //             localStorage.clear()
+    //             setToggle(false);
+    //             navigate("/")
+    //         }
+    //     })
+    //     .catch((error) => {
+    //         window.alert("Logout unsuccessful");
+    //     })
+    // }
 
     return <>
     {!toggle?
