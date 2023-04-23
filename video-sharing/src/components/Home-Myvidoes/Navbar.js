@@ -43,7 +43,7 @@ function Navbar(){
                     <input className="input" type="text" placeholder="Search" onChange={(e) => setQ(e.target.value)}/>
                 </div>
                 <div className="search-btn1" onClick={navigate(`/search?q=${q}`)}>
-                    <img className="searchimg" src="https://icon-library.com/images/blue-search-icon/blue-search-icon-23.jpg" alt="SearchImg"/>
+                    <img className="searchimg" /*src="https://icon-library.com/images/blue-search-icon/blue-search-icon-23.jpg"*/ alt="SearchImg"/>
                 </div>
                 <div className="btn-1" onClick={() => {navigate("/signin")}}>Login</div>
                 <div className="com-btn">|</div>

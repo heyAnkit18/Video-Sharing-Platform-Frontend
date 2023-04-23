@@ -7,7 +7,6 @@
     display: flex;
     margin:100px;
     color: rgb(243, 245, 247);
-    background-color:rgb(12, 12, 12);
     flex-direction: column;
     border-radius: 3%;
     z-index: 1;
