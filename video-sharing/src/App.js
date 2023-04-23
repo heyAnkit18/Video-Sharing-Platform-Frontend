@@ -4,12 +4,12 @@ import logo from './logo.svg';
 import {BrowserRouter,Routes,Route} from"react-router-dom"
 
 function App() {
-  return <BrowserRouter>
-  <Routes>
-    <Route  path="/" element={<Register/>}/>
-    <Route  path="/Signin" element={<Signin/>}/>
-  </Routes>
-  </BrowserRouter>
+  // return <BrowserRouter>
+  // <Routes>
+  //   <Route  path="/" element={<Register/>}/>
+  //   <Route  path="/Signin" element={<Signin/>}/>
+  // </Routes>
+  // </BrowserRouter>
   
   {/* <Register/> */}
   {/* <Sinin/> */}
