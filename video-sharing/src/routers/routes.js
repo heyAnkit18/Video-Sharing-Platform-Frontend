@@ -1,9 +1,8 @@
 import React from "react";
-import LandingPage from "../components/Home-Myvidoes/Landing";
-import Streaming from "../components/Upload-Search-Stream/Streaming";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Upload from "../components/Upload-Search-Stream/Upload";
+import Streaming from "../components/Upload-Search-Stream/Streaming";
 import Myvidoes from "../components/Home-Myvidoes/Myvideos";
-import { BrowserRouter,Routes, Route } from "react-router-dom";
 function Router(){
     return <>
         <BrowserRouter>

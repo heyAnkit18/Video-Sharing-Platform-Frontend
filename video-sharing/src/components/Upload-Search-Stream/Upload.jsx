@@ -1,13 +1,21 @@
 import "./Upload.css";
 
 const fileUpload = () => {
+
+
+  
   return (
     <div id="container">
       <div>
         <h2>Upload New Video</h2>
       </div>
       <div id="input-video">
-        <label>Video:</label>
+      {/* <label>
+        Video Upload here : 
+        </label> */}
+        
+        <input type="file" accept="video/**" id="upload"/>
+        
       </div>
       <h1>Name</h1>
       <textarea name="Title" id="title" placeholder="Title"></textarea>
@@ -23,6 +31,7 @@ const fileUpload = () => {
             <br />
             <select name="category" id="Catergory">
               <option>Education</option>
+              <option value="Movie">Travelling</option>
               <option value="Education">Sports</option>
               <option value="Entertainment">Entertainment</option>
               <option value="Movie">Movie</option>
