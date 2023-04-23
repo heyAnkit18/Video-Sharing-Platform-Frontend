@@ -4,34 +4,8 @@ import axios from "axios";
 import Card from "./Card";
 
 function Content(){
-    // const data = [
-    //     JSON.stringify({"_id":{"$oid":"6444e752a39926787b1e9729"},
-    //     "Title":"Godzilla","Describtion":"The project began as an IMAX short film in 2004 but was transferred to Legendary in 2009 to be redeveloped as a feature film.",
-    //     "ImageURL":"https://drive.google.com/file/d/1HzuyQBoT21BJgobAHNnDHdUTNbT7Rb6d/view?usp=share_link",
-    //     "VideoURL":"https://drive.google.com/file/d/18MJw5CJzHs9h5j5qjXO5t50AsEbGd1DH/view?usp=share_link",
-    //     "Views":{"$numberInt":"0"},
-    //     "Category":"Education",
-    //     "Visiblity":"Private",
-    //     "UserID":"6444e645a39926787b1e9722",
-    //     "createdAt":{"$date":{"$numberLong":"1682237266407"}},
-    //     "updatedAt":{"$date":{"$numberLong":"1682237266407"}},
-    //     "__v":{"$numberInt":"0"},
-    //     }),
-    //     JSON.stringify({"_id":{"$oid":"6444e7fba39926787b1e972d"},
-    //     "Title":"Rana Naidu","Describtion":"Rana Naidu is a 2023 Indian Hindi language action crime drama streaming television series on Netflix created and directed by Karan Anshuman and Suparn Verma.",
-    //     "ImageURL":"https://drive.google.com/file/d/1I0TzsfCw-SbiOhnxfsJFBCfa9N6AVgwt/view?usp=share_link",
-    //     "VideoURL":"https://drive.google.com/file/d/1E6-PF_0rkmsfqhcsqv92WLf8Ir13afg0/view?usp=share_link",
-    //     "Views":{"$numberInt":"0"},
-    //     "Category":"Travelling",
-    //     "Visiblity":"Public","UserID":"6444e645a39926787b1e9722",
-    //     "createdAt":{"$date":{"$numberLong":"1682237435394"}},
-    //     "updatedAt":{"$date":{"$numberLong":"1682237435394"}},
-    //     "__v":{"$numberInt":"0"}
-    //     })
-    // ]
 
     const [videoData, setVideoData] = useState([]);
-    
     const [toggle, setToggle] = useState(false);
     const [homeScreen, setHomeScreen] = useState("");
     const [viewButton, setViewButton] = useState("View all");
