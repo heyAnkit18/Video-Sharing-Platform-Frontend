@@ -26,7 +26,7 @@ const Register=()=>{
       window.alert("password doesn't match conform password")
     }
     else{
-      const res=await fetch("http://localhost:8080/register",{
+      const res=await fetch("https://video-sharing-platform.onrender.com/register",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"
