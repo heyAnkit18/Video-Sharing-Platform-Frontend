@@ -1,10 +1,10 @@
 import React from 'react';
-import Singin from './Components/Sign-Register/Signin.jsx';
-import LandingPage from './Components/Home-Myvidoes/Landingpage.jsx';
-import Register from './Components/Sign-Register/Register.jsx';
+import Singin from './components/Sign-Register/Signin.jsx';
+import LandingPage from './components/Home-Myvidoes/Landingpage.jsx';
+import Register from './components/Sign-Register/Register.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Myvideos from './Components/Home-Myvidoes/Myvideos.jsx';
-import Search from './Components/Upload-Search-Streaming/Search.jsx';
+import Myvideos from './components/Home-Myvidoes/Myvideos.jsx';
+import Search from './components/Upload-Search-Streaming/Search.jsx';
 
 
 function Router() {

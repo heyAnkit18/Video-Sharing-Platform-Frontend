@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./Card.css"
-import Videoplayer from '../../Upload-Search-Streaming/Videoplayer'
+import Videoplayer from "../../Upload-Search-Streaming/Videoplayer"
 
 const Card = ({data})=> {
     const [toggle,setToggle] = useState(false)

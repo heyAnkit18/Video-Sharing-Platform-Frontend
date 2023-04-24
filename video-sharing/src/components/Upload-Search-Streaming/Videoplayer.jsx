@@ -9,7 +9,7 @@ function Videoplayer({setToggle,data}) {
     
 
         <div className='close-icon'>
-            <img onClick={()=>{setToggle(false)}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/High-contrast-dialog-close.svg/768px-High-contrast-dialog-close.svg.png"/>
+            <img onClick={()=>{setToggle(false)}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/High-contrast-dialog-close.svg/768px-High-contrast-dialog-close.svg.png" alt='Not found'/>
         </div>
         <div className='left'>
             <video src={data.videoUrl} style={{width:"100%",height:"85%"}} controls/>
@@ -20,14 +20,14 @@ function Videoplayer({setToggle,data}) {
         </div>
         <div className='right'>
             <div className='releted-content'>
-                <img src={data.imgUrl} style={{width:"100%",height:"100%"}}/>
+                <img src={data.imgUrl} style={{width:"100%",height:"100%"}} alt='Not found'/>
                 <h3>{data.tittle}</h3>
             </div>
             <div className='releted-content'>
-                <img src={data.imgUrl} style={{width:"100%",height:"100%"}}/>
+                <img src={data.imgUrl} style={{width:"100%",height:"100%"}} alt='Not found'/>
                 <h3>{data.tittle}</h3>
             </div>
-            <div className='releted-content'><img src={data.imgUrl} style={{width:"100%",height:"100%"}}/>
+            <div className='releted-content'><img src={data.imgUrl} style={{width:"100%",height:"100%"}} alt='Not found'/>
             <h3>{data.tittle}</h3>
             </div>
         </div>
