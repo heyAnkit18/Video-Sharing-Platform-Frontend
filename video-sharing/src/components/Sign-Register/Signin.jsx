@@ -30,16 +30,20 @@ function SingIn(){
             <section className="sec-first">
                 <img src="https://wallpapercave.com/wp/wp10392517.jpg" alt=""/>
                 <div className='logo'>
-                <h1 >Tuner</h1>
-                <div >Enjoy Multiple videos at one place</div>
+                <h1>Welcome to Tuner</h1>
+                <div ><h3>Tuner is an INDIAN video hosting, sharing, 
+                    and services platform provider headquartered in New York City. 
+                    Vimeo focuses on the delivery of high-definition video 
+                    across a range of devices. Vimeo's business model is through 
+                    software as a service.</h3></div>
                 
                 </div>
                 <button  onClick={() => navigate('/register')}>Register</button>
             </section>
             <section className="sec-second">
                 <form  className='formdata' method='POST'>
-                    <h1>Sing In</h1>
-                    <div>Sing in to continue access pages</div><br />
+                    <h1>Sign in</h1>
+                    <div>Sign in to continue access pages</div><br />
                     <input type="email" name="email" id="email" placeholder="Email" value={email} onChange={(e)=>{setEmail(e.target.value)}}/><br />
                     <input type="password" name="passord" id="password" placeholder="Password" value={password} onChange={(e)=>{setPassword(e.target.value)}}/><br />
                     <input  className="submit" type="submit" name="signup" id="signup" value="Signin" onClick={loginuser}></input><br />
