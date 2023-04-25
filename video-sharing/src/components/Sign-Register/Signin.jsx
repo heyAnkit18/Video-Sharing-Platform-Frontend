@@ -30,12 +30,8 @@ function SingIn(){
             <section className="sec-first">
                 <img src="https://wallpapercave.com/wp/wp10392517.jpg" alt=""/>
                 <div className='logo'>
-                <h1>Welcome to Tuner</h1>
-                <div ><h3>Tuner is an INDIAN video hosting, sharing, 
-                    and services platform provider headquartered in New York City. 
-                    Vimeo focuses on the delivery of high-definition video 
-                    across a range of devices. Vimeo's business model is through 
-                    software as a service.</h3></div>
+                <h1>Tuner</h1>
+                <div >Enjoy Multiple videos at one place</div>
                 
                 </div>
                 <button  onClick={() => navigate('/register')}>Register</button>
