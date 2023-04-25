@@ -51,12 +51,16 @@
     border: 1px solid rgb(31, 29, 29);
   }
   .btn-1:hover {
-    color: rgb(183, 159, 128);
+    color: rgb(237, 236, 234);
   }
   .search-btn1 {
     height: 30px;
-    width: 30px;
-    margin-left: 5.5%;
+    width: 90px;
+    margin-right: 1%;
+    color: rgb(11, 11, 11);
+    background-color: rgb(224, 222, 215);
+    border-radius: 8px;
+    border: 0;
   }
   .com-btn {
     margin-left: 1%;
