@@ -28,7 +28,7 @@ function SingIn(){
     return (<>
         <main>
             <section className="sec-first">
-                <img src="http://www.thestatesman.com/wp-content/uploads/2019/03/Virat-Kohli.jpg" alt=""/>
+                <img src="https://wallpapercave.com/wp/wp10392517.jpg" alt=""/>
                 <div className='logo'>
                 <h1 >Tuner</h1>
                 <div >Enjoy Multiple videos at one place</div>

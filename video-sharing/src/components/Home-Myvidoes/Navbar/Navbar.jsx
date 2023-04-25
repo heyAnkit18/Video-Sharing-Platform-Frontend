@@ -50,8 +50,9 @@ function Navbar() {
     <nav>
       <div className="Container">
         <h1 className="heading" onClick={()=>{nav4("/")}} >Tuner</h1>
-        <div> <input placeholder="Search" className="input" type="text" onChange={(e)=>setQ(e.target.value)}/></div>
-        <div className="search-btn1" onClick={()=>nav2(`/search?q=${q}`)}><img src="https://www.clipartmax.com/png/full/205-2056145_search-button-clipart-icon-circle.png" alt="Search" /></div>
+        <div> <input placeholder="Search Here" className="input" type="text" onChange={(e)=>setQ(e.target.value)}/></div>
+        <div>
+          <button className="search-btn1" onClick={()=>nav2(`/search?q=${q}`)}>Search Now</button></div>
         <div className="btn-1" onClick={() => { navigateSignIn('/sign') }}>Login</div>
         <div className="com-btn">|</div>
         <div className="btn-2" onClick={() => { navigateResgister('/register') }} > Register</div>
