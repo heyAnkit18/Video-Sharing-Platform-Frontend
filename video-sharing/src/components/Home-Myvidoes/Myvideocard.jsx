@@ -16,9 +16,6 @@ const Myvideocard = ({data,setToggle,setData1,setVisible,setCard,card})=> {
         </div>
         <h3>{data.tittle}</h3>
     </div>
-    
-
-    
     </>
   )
 }

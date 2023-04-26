@@ -16,7 +16,7 @@ const Upload = ({ setOpen }) => {
         });
     };
 
-
+   
     const uploadFile = (file, urlType) => {
         const storage = getStorage(app);
         const fileName = new Date().getTime() + file.name;
@@ -29,7 +29,6 @@ const Upload = ({ setOpen }) => {
                 const progress =
                     (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
                 urlType === "imgUrl" ? setImgPerc(Math.round(progress)) : setVideoPerc(Math.round(progress));
-                console.log(imgPerc)
                 switch (snapshot.state) {
                     case "paused":
                         console.log("Upload is paused");
@@ -68,11 +67,8 @@ const Upload = ({ setOpen }) => {
             window.alert("video uploaded sucesfully")
             setOpen(false)
         }).catch((err)=>{
-            console.log(err)
             window.alert("something went wrong")
- 
         })
-
       }
 
     return (

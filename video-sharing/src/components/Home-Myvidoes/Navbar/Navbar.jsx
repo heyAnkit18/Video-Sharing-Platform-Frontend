@@ -63,7 +63,8 @@ function Navbar() {
       <div className="Container">
         <h1 className="heading" onClick={()=>{nav4("/")}}>Tuner</h1>
        <div> <input placeholder="Search" className="input1" type="text" onChange={(e)=>setQ(e.target.value)}/></div>
-        <div  className="search-btn1" onClick={()=>nav2(`/search?q=${q}`)}><img src="https://e7.pngegg.com/pngimages/639/878/png-clipart-computer-icons-search-box-button-button-vector-icons-rim.png" alt="Search" /></div>
+       <div>
+          <button className="search-btn1" onClick={()=>nav2(`/search?q=${q}`)}>Search Now</button></div>
         <div className="btn-3" onClick={()=>{nav1("/myvideos")}}>My Videos</div>
         <div className="com-btn">|</div>
        

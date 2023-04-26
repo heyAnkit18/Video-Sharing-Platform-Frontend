@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./Card.css"
 import Videoplayer from "../../Upload-Search-Streaming/Videoplayer"
 
-const Card = ({data})=> {
+const Card = ({data, videoData})=> {
     const [toggle,setToggle] = useState(false)
   return (
     <>{!toggle?
@@ -13,7 +13,7 @@ const Card = ({data})=> {
         </div>
         <h3>{data.tittle}</h3>
     </div>:
-    <Videoplayer setToggle={setToggle} data={data}/>
+    <Videoplayer setToggle={setToggle} data={data} videoData={videoData}/>
     }
 
     
