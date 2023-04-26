@@ -30,7 +30,7 @@ function SingIn(){
             <section className="sec-first">
                 <img src="https://wallpapercave.com/wp/wp10392517.jpg" alt=""/>
                 <div className='logo'>
-                <h1 >Tuner</h1>
+                <h1>Tuner</h1>
                 <div >Enjoy Multiple videos at one place</div>
                 
                 </div>
@@ -38,7 +38,7 @@ function SingIn(){
             </section>
             <section className="sec-second">
                 <form  className='formdata' method='POST'>
-                    <h1>Sing In</h1>
+                    <h1>Sign in</h1>
                     <div>Sign in to continue access pages</div><br />
                     <input type="email" name="email" id="email" placeholder="Email" value={email} onChange={(e)=>{setEmail(e.target.value)}}/><br />
                     <input type="password" name="passord" id="password" placeholder="Password" value={password} onChange={(e)=>{setPassword(e.target.value)}}/><br />

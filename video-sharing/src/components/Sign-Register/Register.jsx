@@ -53,7 +53,7 @@ const Register=()=>{
                 <div >Enjoy Multiple videos at one place</div>
                 
                 </div>
-                <button  onClick={() => {navigate("/sign")}}>Signin</button>
+                <button  onClick={() => {navigate("/sign")}}>Sign in</button>
             </section>
             <section className="sec-second register">
                 <form method="POST" className="formdata" >
