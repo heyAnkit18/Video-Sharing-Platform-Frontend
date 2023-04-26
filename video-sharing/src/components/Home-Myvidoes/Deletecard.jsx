@@ -28,7 +28,6 @@ const Deletecard =({setToggle,data1,setVisible,setCard})=> {
          
     </div>
     </>
-  
   )
 }
 

@@ -8,16 +8,14 @@ import {  useNavigate } from 'react-router-dom';
 const Register=()=>{
     const navigate = useNavigate();
     const navigate1=useNavigate();
-    
-    
     const [user,setUser]=useState({name:"",email:"",phone:"",profession:"",password:"",cpassword:""});
     
     let name,value;
     const handleInputs=(e)=>{
-    name=e.target.name;
-    value=e.target.value;
-    setUser({...user,[name]:value})
-   }
+      name=e.target.name;
+      value=e.target.value;
+      setUser({...user,[name]:value})
+    }
 
    const Postdata=async (e)=>{
     e.preventDefault();
@@ -34,13 +32,11 @@ const Register=()=>{
       body:JSON.stringify({name,email,phone,profession,password})
     })
      const data=await res.json();
-     console.log(data);
      if(data.status==="Failed" || !data){
        window.alert(data.message)
      }
      else{
        window.alert("registration successful")
-      
        navigate1("/sign")
      }
     }

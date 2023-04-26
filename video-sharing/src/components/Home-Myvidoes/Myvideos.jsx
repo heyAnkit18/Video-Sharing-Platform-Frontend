@@ -14,22 +14,18 @@ function Myvideos() {
         const newToken = localStorage.getItem("mytoken")
         axios.post("https://video-sharing-platform.onrender.com/myvideos",{newToken})
             .then((res) => {
-                console.log(res)
                 setData(res.data)
             }).catch((err) => {
-                console.log(err)
-                window.alert("something went wrong")
+                window.alert("Vidoes are unavailable to load")
 
             })
     }, []);
-    console.log(data);
 
   return (
     <>
     <Navbar/>
      <div id='myvideo-main'>
         <div id={`myvideo-left${visible}`}>
-            
            {
             data.map((data)=>{
                 return <Myvideocard data={data} setToggle={setToggle} setData1={setData1} setVisible={setVisible} setCard={setCard} card={card}/> 
@@ -43,7 +39,6 @@ function Myvideos() {
 
     </div>
     </>
-   
   )
 }
 
