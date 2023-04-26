@@ -39,7 +39,7 @@ function SingIn(){
             <section className="sec-second">
                 <form  className='formdata' method='POST'>
                     <h1>Sing In</h1>
-                    <div>Sing in to continue access pages</div><br />
+                    <div>Sign in to continue access pages</div><br />
                     <input type="email" name="email" id="email" placeholder="Email" value={email} onChange={(e)=>{setEmail(e.target.value)}}/><br />
                     <input type="password" name="passord" id="password" placeholder="Password" value={password} onChange={(e)=>{setPassword(e.target.value)}}/><br />
                     <input  className="submit" type="submit" name="signup" id="signup" value="Signin" onClick={loginuser}></input><br />

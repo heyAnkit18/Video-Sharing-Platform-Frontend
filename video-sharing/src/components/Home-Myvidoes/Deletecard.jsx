@@ -24,11 +24,9 @@ const Deletecard =({setToggle,data1,setVisible,setCard})=> {
         <div id="photo-btns">
             <button>Delete</button>
             <button onClick={closePopup}>Cancel</button>
-        </div>
-         
+        </div>      
     </div>
     </>
-  
   )
 }
 

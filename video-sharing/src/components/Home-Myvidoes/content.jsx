@@ -7,21 +7,19 @@ const Content = () => {
     const [name, setName] = useState("View all");
     const [toggle,setToggle] = useState(false)
     const [data, setData] = useState([]);
+    const [videoData, setVideoData] = useState([]);
 
     useEffect(() => {
         axios.get("https://video-sharing-platform.onrender.com/home")
             .then((res) => {
                 setData(res.data)
+                setVideoData(res.data)
             }).catch((err) => {
-                console.log(err)
                 window.alert("Vidoes are unavailable to load")
-
             })
 
     }, []);
 
- 
-    
     const handleViewButton = () => {
         if (banner) {
             setBanner("")
@@ -34,7 +32,6 @@ const Content = () => {
             setName("View all")
         }
     }
-    console.log(data[1])
    
     return (<>
         <div className={`banner${banner}`}>
@@ -45,19 +42,14 @@ const Content = () => {
             }
             <div className="details">
                 <h1>{data.slice(0,1).map((data)=>{return data.tittle})}</h1>
-
                 <div className="span">
                     <span>{data.slice(0,1).map((data)=>{return data.createdAt})}</span>
                     <span>30 mins</span>
                     <span>80 views</span>
                 </div>
-
             </div>
-           
+        </div>   
 
-        </div>
-       
-      
         <div className="video-content">
             <div className="btns">
                 <div className="recent">
@@ -66,27 +58,17 @@ const Content = () => {
                 <div className="view-all" onClick={handleViewButton}>
                     {name}
                 </div>
-
             </div>
-            <div className="videos">
-
-                
+            <div className="videos">            
                 {!banner? data.slice(0,4).map((data) => {
-                       return <Card data={data} />
+                       return <Card data={data} videoData={videoData}/>
                     }):
-
-
                     data.map((data) => {
-                       return <Card data={data} />
+                       return <Card data={data} videoData={videoData}/>
                     })
-
                 }
-
             </div>
-
         </div>
-
-
     </>
     )
 }
