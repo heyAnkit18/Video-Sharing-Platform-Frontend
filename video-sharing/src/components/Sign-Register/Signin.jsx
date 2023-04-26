@@ -28,10 +28,10 @@ function SingIn(){
     return (<>
         <main>
             <section className="sec-first">
-                <img src="https://wallpapercave.com/wp/wp10392517.jpg" alt=""/>
+                <img src="https://img.freepik.com/free-vector/realistic-style-technology-particle-background_23-2148426704.jpg" alt=""/>
                 <div className='logo'>
                 <h1>Tuner</h1>
-                <div >Enjoy Multiple videos at one place</div>
+                <div >Made in INDIA platform to Solve the hassle of video delivery by packing transcoding, storage, security, and video player into a powerful but straightforward package. Stream anywhere. Without buffering!</div>
                 
                 </div>
                 <button  onClick={() => navigate('/register')}>Register</button>
