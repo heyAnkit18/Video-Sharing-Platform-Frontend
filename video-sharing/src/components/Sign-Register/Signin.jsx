@@ -14,7 +14,7 @@ function SingIn(){
     const loginuser=async (e)=>{
         e.preventDefault();
 
-        axios.post("https://video-sharing-platform.onrender.com/signin",{email,password})
+        axios.post("https://video-sharing-platform-backend-5hgw.onrender.com/signin",{email,password})
         .then((res)=>{
             localStorage.setItem("mytoken",res.data.Token);
             window.alert("Signin successful")
