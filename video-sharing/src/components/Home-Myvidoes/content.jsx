@@ -48,8 +48,8 @@ const Content = () => {
 
                 <div className="span">
                     <span>{data.slice(0,1).map((data)=>{return data.createdAt})}</span>
-                    <span>30 mins</span>
-                    <span>80 views</span>
+                    <span>Last 1 hour</span>
+                    <span>186k Views</span>
                 </div>
 
             </div>

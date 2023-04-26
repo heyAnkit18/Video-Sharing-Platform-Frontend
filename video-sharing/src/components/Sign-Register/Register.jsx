@@ -35,7 +35,7 @@ const Register=()=>{
     })
      const data=await res.json();
      console.log(data);
-     if(data.status=="Failed" || !data){
+     if(data.status==="Failed" || !data){
        window.alert(data.message)
      }
      else{
@@ -51,10 +51,10 @@ const Register=()=>{
         <>
        <main>
             <section className="sec-first">
-            <img src="http://www.thestatesman.com/wp-content/uploads/2019/03/Virat-Kohli.jpg" alt=""/>
+            <img src="https://w0.peakpx.com/wallpaper/335/158/HD-wallpaper-flower-amoled-android-apple-black-dark-galaxy-ios-iphone-note-samsung-thumbnail.jpg" alt=""/>
                 <div className='logo'>
                 <h1 >Tuner</h1>
-                <div >Enjoy Multiple videos at one place</div>
+                <div >Register Now and 15 days Free trails</div>
                 
                 </div>
                 <button  onClick={() => {navigate("/sign")}}>Sign in</button>

@@ -21,13 +21,13 @@ img{
 .sec-first h1{
     font-size: 105px;
     margin: 132px 0 0 50px;
-    color:#949ed6;;
+    color:white;
 }
 .sec-first div{
-    font-size: 35px;
+    font-size: 18px;
     color: white;
     margin: 12px 0 0 55px;
-    width: 350px;
+    width: 400px;
 }
 .sec-first button{
    

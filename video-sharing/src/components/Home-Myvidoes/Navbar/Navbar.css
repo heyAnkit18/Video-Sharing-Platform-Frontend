@@ -95,18 +95,20 @@
   }
   .btn-3 {
     margin-left: 6%;
-    background: black;
+    background: rgb(0, 0, 0);
     color: rgb(180, 176, 176);
     border: none;
-    font-size: 19px;
-  
+    font-size: 17px;
     cursor: pointer;
+    width: 70px;
+    border: none;
+
   }
   .btn-2:hover {
-    color: rgb(183, 159, 128);
+    color: rgb(8, 240, 19);
   }
   .btn-3:hover {
-    color: rgb(183, 159, 128);
+    color: rgb(10, 240, 45);
   }
   .btn-4 {
     margin-left: 1%;
@@ -118,14 +120,15 @@
     cursor: pointer;
   }
   .btn-4:hover {
-    color: rgb(183, 159, 128);
+    color: rgb(7, 245, 35);
   }
   .btn-5 {
     background: black;
-    color: rgb(184, 23, 23);
+    color: rgb(213, 208, 208);
     border: none;
-    font-size: 19px;
-  
+    font-size: 18px;
+    width: 80px;
+    margin-right: 10px;
     cursor: pointer;
   }
   .btn-5:hover {
